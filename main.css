@@ -1,0 +1,73 @@
+:root {
+    --green:#7fc77f;
+    --white:#ffffff;
+    --black:#000000;
+}
+
+.light-theme{
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+    --btnHoverBg: var(--white);
+    --btnHoverFontColor: var(--black);
+}
+
+.dark-theme{
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+    --btnHoverBg: var(--green);
+    --btnHoverFontColor: var(--white);
+}
+
+body {
+    font-size:large;
+    font-family: monospace;
+    font-size:1.5em;
+    background: var(--bg);
+}
+
+li {
+    margin-left: 30px;
+}
+
+ul {
+    font-family: Helvetica, sans-serif;
+}
+
+li {
+list-style: circle;
+}
+
+.list {
+list-style: square;
+}
+
+#msg {
+font-family: monospace;
+}
+
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    position:absolute;
+    top:40px;
+    left:300px;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    border:none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--btnHoverBg);
+    color: var(--btnHoverFontColor);
+}
+
+* {
+    color: var(--fontColor);
+    font-family:Helvetica, sans-serif;
+}
